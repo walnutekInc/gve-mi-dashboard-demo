@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Metronic Vue Demo" />
+  <link rel="icon" href="/gve-mi-dashboard-demo/favicon.ico">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700">
+  <link rel="stylesheet" href="/gve-mi-dashboard-demo/splash-screen.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gve Mi Dashboard</title>
+  <script type="module" crossorigin src="/gve-mi-dashboard-demo/assets/index.ddcf840a.js"></script>
+  <link rel="stylesheet" href="/gve-mi-dashboard-demo/assets/index.3c9e54cb.css">
+</head>
+
+<body class="page-loading">
+    <!--begin::Theme mode setup on page load-->
+    <script>
+        let themeMode = "system";
+
+        if (localStorage.getItem("kt_theme_mode_value")) {
+            themeMode = localStorage.getItem("kt_theme_mode_value");
+        }
+
+        if (themeMode === "system") {
+            themeMode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        }
+
+        document.documentElement.setAttribute("data-bs-theme", themeMode);
+    </script>
+    <!--end::Theme mode setup on page load-->
+
+    <div id="app"></div>
+
+    <!--begin::Loading markup-->
+    <div id="splash-screen" class="splash-screen">
+        <img src="/gve-mi-dashboard-demo/media/logos/default-dark.svg" class="dark-logo" alt="Gve Mi Dashboard logo" />
+        <img src="/gve-mi-dashboard-demo/media/logos/gve-logo-orange.png" class="light-logo" alt="Gve Mi Dashboard logo" />
+        <span>Loading ...</span>
+    </div>
+    <!--end::Loading markup-->
+
+    
+</body>
+
+</html>
