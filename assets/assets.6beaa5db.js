@@ -1,0 +1,1 @@
+import{S as r,ar as d}from"./index.663a3d0f.js";const o=s=>{const t=s.substring(s.lastIndexOf("."),s.length),e=r().mode=="dark"?`${s.substring(0,s.lastIndexOf("."))}-dark`:s.substring(0,s.lastIndexOf("."));return`/gve-mi-dashboard-demo/media/illustrations/${d.value}/${e}${t}`},a=s=>"/gve-mi-dashboard-demo/"+s;export{o as a,a as g};
